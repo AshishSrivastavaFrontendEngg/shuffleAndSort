@@ -1,0 +1,132 @@
+.container {
+    width: 960px;
+    margin: 0 auto;
+    background: #efefef;
+    border-top: 2px solid #6f98a8;
+}
+
+header{
+    text-align: center;
+}
+
+aside {
+    float: right;    
+    margin: 10px;
+}
+
+footer{
+    text-align: center;
+    padding: 10px 0 30px;
+}
+
+.flexContainer{
+    display: flex;
+    flex-flow: row wrap;
+    width:78%;
+}
+
+.innerBox{
+    flex: 1 0 33%;
+}
+
+.numbers{
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+    border: 1px solid #72c3dc;
+    background-color: #72C3DC;
+    box-shadow: 1px 1px #6f98a8;
+    overflow: visible;
+    padding: 15px 25px;
+    display: block;
+    margin: 10px;
+    width: 10rem;
+}
+
+.card-3,
+.card-5,
+.card-9 {
+    background: #2f454e;
+}
+.card-2,
+.card-4 {
+    background: #2b8ead;
+}
+.card-1,
+.card-8 {
+    background: #6f98a8;
+}
+.card-6,
+.card-7 {
+    background: #bfbfbf;
+}
+
+@media screen and (max-width:375px) {
+    .container{
+        background: none;
+        width: 100%;
+        border-top: none;
+    }
+    body {
+        border: 8px solid black;
+    }
+
+    .flexContainer{
+        width: 100%;
+    }
+
+    header {
+        color: #fff;
+        background-color: #333333;
+        padding: 10px 0 2px;
+    }
+    .innerBox{
+        background-color: #efefef;
+        margin: 5px;
+        flex: 1 0 90%;
+        border-left: 10px solid black;
+    }
+
+    .numbers{
+        font-size: 1rem;
+        color: #000;
+    }
+
+    aside {
+        float: none;
+        margin: 1em;
+        width: auto;
+        border: 0;
+        text-align: center;
+    }
+
+    .card-3,
+    .card-5,
+    .card-9 {
+        border-left: 0.5em solid #2f454e;
+    }
+    .card-2,
+    .card-4 {
+        border-left: 0.5em solid #2b8ead;
+    }
+    .card-1,
+    .card-8 {
+        border-left: 0.5em solid #6f98a8;
+    }
+    .card-6,
+    .card-7 {
+        border-left: 0.5em solid #bfbfbf;
+    }
+
+    button{
+        display: inline-block;
+        margin: 0;
+        width: 6rem;
+    }       
+}
